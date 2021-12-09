@@ -11,21 +11,24 @@
     background-position: center;
     background-attachment: fixed;
     margin-bottom: 0;
+    padding-bottom: 120px;
 }
 /* nav.sticky#navbar{
     background-color:#e7e7e9;
     padding: 0;
 } */
-/* .header nav {
+.header nav {
     position: sticky;
     top: 0;
-} */
+}
 #barwa {
     text-decoration: none;
+    transition: 0.3s;
 }
 #barwa:hover {
     border-bottom: 1px solid #EBEBF2;
     margin-bottom: -1px;
+    transition: 0.3s;
 }
 .topbar {
     padding-bottom: 15px;
@@ -52,10 +55,11 @@
     width: 80px;
     height: 80px;
 }
-.container-fluid a:hover {
+.navbar-collapse a:hover {
     border-bottom: 1px solid #EBEBF2;
     margin-bottom: -1px;
     color: #D9042B;
+    transition: 0.3s;
 }
 .nav-item a {
     color: #270140;
@@ -70,10 +74,9 @@
 #welcome{
     font-weight: 700;
 }
-/* #main-nav {
-    justify-content: center;
-    text-align: center;
-} */
+#main-nav {
+    margin-top: 120px;
+}
 #main-nav a {
     border: 1px solid #F2B705;
     border-radius: 3rem;
@@ -81,10 +84,12 @@
     color: #e7e7e9;
     font-weight: 550;
     padding: 5px 25px;
+    transition: 0.3s;
 }
 #main-nav a:hover {
     background-color: #F2B705;
     color: #e7e7e9;
+    transition: 0.3s;
 }
 .lead {
     font-family: 'Zilla Slab', serif;
@@ -116,6 +121,24 @@
     /* background-position:center; */
     background-attachment:fixed;
 }
+#about h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: #e7e7e9;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+#contents {
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    text-align: justify;
+    color: #e7e7e9;
+    list-style: none;
+}
+#contents i {
+    padding-right: 5px;
+    color: #F2B705;
+}
 .img-hover-zoom {
     width: 100%; 
     cursor: pointer;
@@ -130,10 +153,7 @@
 .img-hover-zoom:hover img {
     transform: scale(1.1);
     filter: brightness(100%);
-}
-#about h1 {
-    font-weight: 100;
-    color: #e7e7e9;
+    transition: 0.3s;
 }
 .title {
     padding-bottom: 40px;
@@ -160,10 +180,42 @@
 .title h1 {
     margin: 0;
     margin: 0;
-    font-size: 36px;
+    font-size: 2.2rem;
     font-weight: 700;
     font-family: "Playfair Display", serif;
     color: #cda45e;
+}
+.think {
+    background-color: #202020;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    transition: 1s;
+}
+.think:hover {
+    background-color: #cda45e;
+    width: 100%;
+    transition: 1s;
+    padding: 1rem 2rem 3rem 2rem;
+}
+.think:hover span {
+    color: #e7e7e9ec;
+}
+.think span {
+    color: #cda45e;
+    font-weight: 700;
+    font-size: 2rem;
+    display: block;
+}
+.think h4 {
+    color: #e7e7e9ec;
+    font-family: "Playfair Display", serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+}
+.think p {
+    color: #e7e7e9bb;
 }
 .jumbotron #menu-flters {
     padding: 0;
@@ -245,33 +297,153 @@
     font-family: "Poppins", sans-serif;
     color: rgba(255, 255, 255, 0.5);
 }  
-#gambar-testi{
+.tes-gambar{
+    /* transition: all ease-in-out 0.4s; */
     width: 100%;
-    padding: 0;
+    /* max-width: 500px; */
+    /* height: 330px; */
+    margin-bottom: 20px;
+}
+.tes-gambar img {
+    width: 100%;
+    /* max-width: 500px; */
+    /* height: 330px; */
     transition: transform .9s ease;
     opacity: 0.5;
 }
-#gambar-testi:hover {
+.tes-gambar:hover img {
     opacity: 1;
-    transform: scale(1.1);
-    cursor: pointer;
+    transform:scale(1.1);
 }
 .title-event {
     padding-top: 25px;
     margin-left: 0;
 }
 .title-event span {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 26px;
+    font-weight: 600;
     font-family: "Playfair Display", serif;
     color: #cda45e;
 }
 .title-event h1 {
     padding: 10px 0 10px 0;
-    font-size: 20px;
+    font-size: 26px;
     color: #e7e7e9;
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
+}
+#contact .info {
+    width: 100%;
+}
+#contact .info i {
+    font-size: 20px;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #cda45e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+#contact .info h4 {
+    padding: 0 0 0 60px;
+    color: #e7e7e9;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-family: "Poppins", sans-serif;
+}
+#contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #bab3a6;
+}
+#contact .info .open-hours, #contact .info .email, #contact .info .phone {
+    margin-top: 40px;
+}
+.footer-top span {
+    font-size: 24px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+.footer-top p {
+    color: #e7e7e9;
+    font-family: "Playfair Display", serif;
+}
+.footer-top strong {
+    font-family: "Playfair Display", serif;
+}
+.footer-top #bacaan {
+    float: right;
+}
+.footer-top h4 {
+    font-family: "Playfair Display", serif;
+    color: #e7e7e9;
+    font-size: 1.2rem;
+}
+.footer-top ul li {
+    margin-bottom: 5px;
+}
+.footer-top #arrow {
+    color: #F2B705;
+    font-size: 10px;
+}
+.footer-top li {
+    list-style: none;
+}
+.footer-top a {
+    font-family: "Playfair Display", serif;
+    color: #e7e7e9;
+    padding-left: 5px;
+}.footer-top a:hover {
+    color: #F2B705;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.social-media a {
+    color: #e7e7e9;
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+    line-height: 1;
+    border-radius: 50%;
+    background: #555255b9;
+    padding: 8px 0;
+    display: inline-block;
+    margin-right: 8px;
+    text-align: center;
+    transition: 0.3s;
+}
+.social-media a:hover {
+    background: #e7e7e9;
+    color: #555255b9;
+    text-decoration: none;
+}
+.footer-bottom .container {
+    padding: 20px 0;
+}
+.footer-bottom .copyright {
+    text-align: center;
+    justify-content: center;
+    color: #e7e7e9de;
+}
+.footer-bottom .credits {
+    padding-top: 5px;
+    text-align: center;
+    justify-content: center;
+    color: #e7e7e9de;
+    font-size: 0.9rem;
+}
+.footer-bottom .credits a {
+    color: #cda45e;
+}
+.footer-bottom .credits a:hover {
+    color: #f5d08f;
+    text-decoration: none;
+    transition: 0.3s;
 }
 /* #menu {
     width: 100%;
