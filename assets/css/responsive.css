@@ -79,6 +79,9 @@
         opacity: 1;
         transform:scale(1.1);
     }
+    .owl-carousel img {
+        width: 100%;
+    }
     /* .container-fluid {
         width: 100%;
         padding-right: 15px;
